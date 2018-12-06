@@ -78,6 +78,17 @@ class Frontend_model extends CI_Model {
                         ->result();
                 return $result;
     }
-    
+    public function get_all_doctor_info()
+    {
+                        $this->db->select('*');
+                        $this->db->from('tbl_admin');
+                        $this->db->join('tbl_doctor', 'tbl_doctor.admin_id = tbl_admin.admin_id');
+                        $this->db->join('tbl_department', 'tbl_department.dept_id = tbl_doctor.department');
+                        $this->db->where('admin_role', 2);
+                        $this->db->where('activation_status', 1);
+                        $query = $this->db->get()->result();
+
+                return $query;
+    }
     
 }
