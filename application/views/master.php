@@ -26,7 +26,8 @@
 	<!--<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dosis|Montserrat|Noto+Sans|Oswald|PT+Sans+Narrow|Raleway|Roboto+Condensed" rel="stylesheet">
-	<!--2nd bootstrap links-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!--2nd bootstrap links-->
 	<!-- Slick Carousel -->
 <!--        <link rel="stylesheet" href="<?php echo base_url()?>asset/2nd/plugins/slick/slick.css">
         <link rel="stylesheet" href="<?php echo base_url()?>asset/2nd/plugins/slick/slick-theme.css">
@@ -71,12 +72,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-7 col-sm-8">
-				<p class="bold text-left"> Doctor Appointment:  02-55092196-99 ( Ext.-666 ) 9am to 5PM
+				<p class="bold text-left"><i class="far fa-calendar-check"></i>  Doctor Appointment:  02-55092196-99 ( Ext.-666 ) 9am to 5PM
                    </p>
 
 			</div>
 			<div class="col-md-5 col-sm-4">
-				<p class="bold text-right" >24 Hours Contact: 01512345678, +1-123 456 </p>
+                            <p class="bold text-right"> <i class="fas fa-phone-volume"></i>  24 Hours Contact: 01512345678, +1-123 456 </p>
 			</div>
 		</div>
 	</div>
@@ -110,9 +111,9 @@
 							<ul>
 								<?php
                                                                     if (isset($slider)) { ?>
-                                                                <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
+                                                                <li class="active"><a href="<?php echo base_url()?>"> <i class="fas fa-home"></i> Home</a></li>
                                                                     <?php } else {?>
-                                                                <li class=""><a href="<?php echo base_url()?>">Home</a></li>
+                                                                <li class=""><a href="<?php echo base_url()?>"><i class="fas fa-home"></i> Home</a></li>
                                                                     <?php } ?>
 
                                                                 <?php
